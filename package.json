@@ -1,0 +1,19 @@
+{
+  "name": "platilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "rm -rf ./dist/css & sass --watch --no-source-map ./src/scss/styles.scss ./docs/css/styles.css",
+    "build": "postcss docs/css/styles.css -o docs/css/styles.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.1.0"
+  }
+}
