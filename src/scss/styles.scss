@@ -1,1 +1,10 @@
 @use './reset/reset';
+@use './pages/header';
+@use './pages/home';
+@use './pages/date';
+
+.wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}

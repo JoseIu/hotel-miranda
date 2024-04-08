@@ -1,0 +1,63 @@
+.home {
+  padding: 1em;
+  min-height: 90dvh;
+  color: var(--white-color);
+  background-image: url(../assets/images/bg-home-black.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  background-attachment: fixed;
+  &__content {
+    padding: 5em 0 0 0;
+
+    @media screen and (min-width: 600px) {
+      padding: 5em 0 0 3em;
+    }
+  }
+
+  &__subtitle {
+    font-size: clamp(0.8125rem, 1vw, 0.875rem);
+    display: block;
+    margin-bottom: 2em;
+  }
+  &__title {
+    max-width: 43.3125rem;
+    margin-bottom: 0.5em;
+    font-size: clamp(3.3rem, 10vw, 7.1rem);
+    font-family: var(--third-font);
+    letter-spacing: 0.1375rem;
+    font-weight: 400;
+    text-wrap: wrap;
+  }
+  &__tbns {
+    @media screen and (min-width: 600px) {
+      display: flex;
+      gap: 1em;
+    }
+  }
+  &__btn {
+    width: 13.5rem;
+    height: 3.75rem;
+
+    text-transform: uppercase;
+    outline: 0.0625rem solid var(--white-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1em;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 0;
+    }
+    &--mustard {
+      background-color: var(--mustard-color);
+      outline: none;
+    }
+  }
+
+  &__date {
+    background-color: var(---black-color);
+  }
+}
