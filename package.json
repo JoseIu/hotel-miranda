@@ -1,11 +1,11 @@
 {
-  "name": "platilla",
+  "name": "hotel-miranda",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "rm -rf ./dist/css & sass --watch --no-source-map ./src/scss/styles.scss ./docs/css/styles.css",
-    "build": "postcss docs/css/styles.css -o docs/css/styles.min.css"
+    "sass": "sass --watch --no-source-map ./src/scss/styles.scss ./dist/css/styles.css",
+    "build": "postcss ./dist/css/styles.css -o ./dist/css/styles.min.css --no-map"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "postcss": "^8.4.19",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.74.1"
   }
 }
