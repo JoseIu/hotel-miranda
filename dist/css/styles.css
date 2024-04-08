@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Archivo";
+  src: url(../assets/fonts/Archivo-Regular.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url(../assets/fonts/Archivo-SemiBoldwoff) format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url(../assets/fonts/Archivo-Bold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Bold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Old Standard TT";
+  src: url(../assets/fonts/OldStandardTT-Regular.woff) format("woff");
+  font-weight: 400;
+}
+:root {
+  /* Colores */
+  --black-color: rgba(34, 34, 34, 1);
+  --black2-color: rgba(41, 41, 41, 1);
+  --mustard-color: rgba(190, 173, 142, 1);
+  --tbn-color: rgba(173, 157, 130, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  /* Tipografía */
+  --main-font: "Archivo", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --third-font: "Old Standard TT", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  object-fit: cover;
+  /* (Opcional) */
+  object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  appearance: none;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--main-font);
+  color: var(--negro);
+  /* (Opcional) */
+  hyphens: auto;
+  /* (Opcional) */
+  font-smooth: always;
+  /* (Opcional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Opcional) */
+  -moz-osx-font-smoothing: grayscale;
+}
