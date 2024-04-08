@@ -8,12 +8,82 @@
       name="description"
       content="Hotel Miranda: Enjoy the ultimate coastal experience in our comfortable facilities. Located on the beautiful coast, Hotel Miranda is your perfect destination for a relaxing vacation."
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/styles.min.css" />
+
     <title>Miranda</title>
   </head>
   <body>
-    <header>
-      <h1>Hola Mundo</h1>
+    <header class="header">
+      <div class="header__container wrapper">
+        <div class="header__content">
+          <button class="header__toggle" aria-label="toggle open menu">
+            <img src="./assets/images/menu.svg" alt="image to open menu" />
+          </button>
+          <div class="header__logo">
+            <img class="header__image" src="./assets/images/logo.svg" alt="hotel miranda logo" />
+
+            <h1 class="header__title">Hotel <span>Miranda</span></h1>
+          </div>
+
+          <nav class="header__nav">
+            <button class="header__close" aria-label="button close menu">
+              <img src="./assets/images/cross.svg" alt="close menu" />
+            </button>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">About Us </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Rooms </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Offers </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Contact </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./assets/images/profile.svg" alt="profile icon" />
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./assets/images/search.svg" alt="search icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
+    <main>
+      <section class="home">
+        <div class="home__content wrapper">
+          <span class="home__subtitle">THE ULTIMATE LUXURY EXPERIENCE</span>
+          <h2 class="home__title">The Perfect Base For You</h2>
+
+          <div class="home__tbns">
+            <a class="home__btn home__btn--mustard" href="#">Take a Tour</a>
+            <a class="home__btn" href="#">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section class="date">
+        <form class="date__form wrapper">
+          <div class="date__form-inputs">
+            <input class="date__form-input" type="date" name="arrival" id="arrival" />
+            <input class="date__form-input" type="date" name="depurate" id="depurate" />
+          </div>
+          <button class="date__form-submit" type="submit">Check availability</button>
+        </form>
+      </section>
+    </main>
+
+    <script defer type="module" src="./index.js"></script>
   </body>
 </html>
