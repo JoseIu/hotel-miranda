@@ -1,0 +1,113 @@
+.about {
+  padding: 1em;
+  font-weight: 400;
+  margin-bottom: 10em;
+
+  @media screen and (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: 35.5rem 1fr;
+
+    &__content {
+      order: 2;
+    }
+    &__images {
+      order: 1;
+    }
+  }
+  &__content {
+    margin-bottom: 2em;
+    @media screen and (min-width: 1000px) {
+      padding-top: 6em;
+      margin-bottom: 0;
+    }
+  }
+  &__bg {
+    @media screen and (min-width: 1000px) {
+      padding-left: 3em;
+      //   background-image: url(../assets/images/sofa.jpg);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: cover;
+    }
+  }
+  &__subtitle {
+    @media screen and (min-width: 1000px) {
+      padding-left: 3.3em;
+    }
+  }
+  &__title {
+    max-width: 34.1875em;
+    margin-bottom: 0.5em;
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    font-family: 'Old Standard TT';
+  }
+  &__description {
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    max-width: 24.8125em;
+    margin-bottom: 2em;
+
+    line-height: 1.5em;
+  }
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    justify-items: center;
+    justify-content: stretch;
+    gap: 1.5em;
+
+    @media screen and (min-width: 1000px) {
+      //   position: relative;
+      //   left: 2em;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.card {
+  &--order {
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__image {
+    margin-bottom: 1em;
+    &--order {
+      order: 2;
+    }
+  }
+  &__content {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    background-color: var(--white-color);
+    &-image {
+      width: 4.25rem;
+    }
+    &-title {
+      font-family: 'Old Standard TT';
+      font-weight: 400;
+      font-size: 1.775rem;
+    }
+    &-description {
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      text-align: center;
+    }
+
+    &--dark {
+      background-color: var(--black-color);
+      color: var(--white-color);
+    }
+    &--bg {
+      order: 1;
+      background-image: url(../assets/images/people.svg);
+      background-repeat: no-repeat;
+      background-position: top 3em right 1.5em;
+    }
+  }
+}
