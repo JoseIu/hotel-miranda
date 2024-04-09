@@ -2,9 +2,32 @@
 @use './pages/header';
 @use './pages/home';
 @use './pages/date';
+@use './pages/about';
+@use './pages/rooms';
+@use './pages/intro';
 
 .wrapper {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.title {
+  font-size: clamp(0.8125rem, 2vw, 1rem);
+  font-weight: 700;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.175rem;
+  color: var(--black2-color);
+}
+.button {
+  color: var(--white-color);
+  background-color: var(--tbn-color);
+  width: 13.5rem;
+  height: 3.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
