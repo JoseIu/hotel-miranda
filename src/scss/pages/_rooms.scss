@@ -62,11 +62,19 @@
       background-color: var(--white-color);
       position: relative;
       bottom: -12em;
+      @media screen and (min-width: 500px) {
+        bottom: -9em;
+      }
+      @media screen and (min-width: 800px) {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+      }
     }
     &-title {
       font-family: 'Old Standard TT';
       font-weight: 400;
-      font-size: clamp(1.9rem, 2vw, 2.25rem);
+      font-size: clamp(1.9rem, 2vw, 2rem);
       margin-bottom: 0.5em;
     }
     &-text {
