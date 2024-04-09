@@ -1,6 +1,9 @@
 .intro {
   color: var(--white-color);
   background: rgb(34, 34, 34);
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(90deg, rgba(34, 34, 34, 1) 71%, rgba(190, 173, 142, 1) 71%);
+  }
 
   &__container {
     padding: 2em 1em;
@@ -11,7 +14,6 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 1em;
       align-items: center;
-      background: linear-gradient(90deg, rgba(34, 34, 34, 1) 71%, rgba(190, 173, 142, 1) 71%);
     }
   }
   &__content {
@@ -29,7 +31,7 @@
     font-family: 'Old Standard TT';
     font-weight: 400;
     max-width: 30.75rem;
-    font-size: clamp(3.5rem, 4vw, 5rem);
+    font-size: clamp(3.5rem, 4vw, 4.5rem);
   }
   &__description {
     max-width: 30.3125rem;
