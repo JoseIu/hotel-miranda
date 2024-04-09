@@ -1,0 +1,55 @@
+.intro {
+  color: var(--white-color);
+  background: rgb(34, 34, 34);
+
+  &__container {
+    padding: 2em 1em;
+    @media screen and (min-width: 768px) {
+      padding: 4em 2em;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1em;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(34, 34, 34, 1) 71%, rgba(190, 173, 142, 1) 71%);
+    }
+  }
+  &__content {
+  }
+  &__subtitle {
+    margin-bottom: 2em;
+    font-size: clamp(0.8125rem, 2vw, 1rem);
+    letter-spacing: 0.175rem;
+
+    color: var(--mustard-color);
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-bottom: 0.5em;
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    max-width: 30.75rem;
+    font-size: clamp(3.5rem, 4vw, 5rem);
+  }
+  &__description {
+    max-width: 30.3125rem;
+    margin-bottom: 2em;
+
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+  &__button {
+    text-transform: uppercase;
+    background-color: var(--mustard-color);
+    width: 13.4375rem;
+    height: 3.75rem;
+    &--hidden {
+      display: none;
+    }
+  }
+  &__video {
+    max-width: 35.625rem;
+    margin-bottom: 1em;
+  }
+}
