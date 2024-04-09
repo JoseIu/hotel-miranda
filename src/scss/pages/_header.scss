@@ -78,11 +78,11 @@
     &-list {
       display: flex;
       flex-direction: column;
-      gap: 0.5em;
+      gap: 1em;
       font-weight: 600;
       @media screen and (min-width: 768px) {
         flex-direction: row;
-        gap: 1em;
+        gap: 1.3em;
       }
     }
     &-item {
@@ -97,9 +97,8 @@
     }
   }
   &__nav--active {
-    transform: translateY(50%);
+    transform: translateY(40%);
     background-color: var(--white-color);
-    // background-color: lawngreen;
   }
   &__close {
     @media screen and (min-width: 768px) {

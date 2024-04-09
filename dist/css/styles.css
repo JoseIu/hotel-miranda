@@ -237,13 +237,13 @@ body {
 .header__nav-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1em;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .header__nav-list {
     flex-direction: row;
-    gap: 1em;
+    gap: 1.3em;
   }
 }
 .header__nav-link {
@@ -255,7 +255,7 @@ body {
   }
 }
 .header__nav--active {
-  transform: translateY(50%);
+  transform: translateY(40%);
   background-color: var(--white-color);
 }
 @media screen and (min-width: 768px) {
