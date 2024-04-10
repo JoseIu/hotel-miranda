@@ -5,13 +5,24 @@
 @use './pages/about';
 @use './pages/rooms';
 @use './pages/intro';
+@use './pages/features';
+@use './pages/foods';
 
 .wrapper {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
-
+.wrapper2 {
+  max-width: 73.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.old {
+  font-family: 'Old Standard TT';
+  font-weight: 400;
+  letter-spacing: -0.075rem;
+}
 .title {
   font-size: clamp(0.8125rem, 2vw, 1rem);
   font-weight: 700;
