@@ -155,8 +155,7 @@ body {
   font-size: 100%;
   font-family: var(--main-font);
   color: var(--negro);
-  /* (Opcional) */
-  hyphens: auto;
+  text-wrap: pretty;
   /* (Opcional) */
   font-smooth: always;
   /* (Opcional) */
@@ -268,7 +267,7 @@ body {
   padding: 1em;
   min-height: 90dvh;
   color: var(--white-color);
-  background-image: url(../assets/images/bg-home-black.webp);
+  background-image: url(../assets/images/bg-home-2.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -649,10 +648,199 @@ body {
   margin-bottom: 1em;
 }
 
+.features {
+  padding: 1em;
+  background-color: var(--white-color);
+}
+.features--dark {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.features__subtitle {
+  text-align: center;
+}
+.features__title {
+  text-align: center;
+  font-size: clamp(3.5rem, 3.5vw, 5rem);
+}
+.features__list {
+  max-width: 73.75rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+  gap: 2em;
+}
+.feature {
+  position: relative;
+  padding: 3em 2em 2em 2em;
+  background-color: var(--white-color);
+  counter-increment: number;
+}
+.feature::after {
+  content: counter(number, decimal-leading-zero);
+  position: absolute;
+  top: -0.2em;
+  right: 0.2em;
+  font-size: 7.5rem;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 0.04);
+}
+.feature--dark {
+  background-color: var(--dark-2-color);
+  color: var(--white-color);
+}
+.feature__img {
+  width: 4.375rem;
+  height: 4.375rem;
+  margin-bottom: 2em;
+  object-fit: contain;
+}
+.feature__content {
+  max-width: 15.625rem;
+}
+.feature__title {
+  font-size: 1.875rem;
+  margin-bottom: 0.5em;
+}
+.feature__desctiption {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.foods {
+  padding: 7em 1em 1em 1em;
+  background-image: url("../assets/images/foods/foods.svg");
+  background-repeat: no-repeat;
+  background-position: top right -1em;
+  background-size: clamp(7.125rem, 8vw, 14.3125rem);
+}
+@media screen and (min-width: 800px) {
+  .foods {
+    padding: 10em 1em 1em 1em;
+    background-position: top left;
+  }
+}
+.foods__title {
+  font-size: clamp(3.5rem, 3.5vw, 5rem);
+}
+.foods__list {
+  margin-bottom: 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 1em;
+}
+@media screen and (min-width: 600px) {
+  .foods__list {
+    grid-template-columns: repeat(auto-fit, minmax(29em, 1fr));
+  }
+}
+.foods__slider {
+  max-width: 73.125rem;
+  overflow: hidden;
+}
+.foods__images-list {
+  width: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .foods__images-list {
+    width: 100%;
+    gap: 1em;
+  }
+}
+.foods__images-item {
+  width: 33.3333333333%;
+}
+
+.food {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: 9.5rem auto;
+  gap: 1em;
+}
+.food__img {
+  width: 100%;
+}
+.food__content {
+  position: relative;
+  max-width: 35.625rem;
+  transition: all 0.2s ease;
+}
+@media screen and (min-width: 600px) {
+  .food__content {
+    padding: 1em 0.5em 0.5em 0.5em;
+  }
+  .food__content:hover {
+    background-color: var(--black2-color);
+    color: var(--white-color);
+  }
+  .food__content:hover::after {
+    content: url("../assets/images/foods/arrow-hover.svg");
+    position: absolute;
+    top: 42%;
+    right: 0.625rem;
+  }
+}
+.food__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.3em;
+}
+.food__description {
+  max-width: 17.75rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.benefies__list {
+  padding: 5em;
+  background-color: var(--black2-color);
+  color: var(--white-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+  gap: 3em;
+}
+
+.benefie {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.3em;
+}
+.benefie__img {
+  width: 4.5rem;
+}
+.benefie__title, .benefie__subtitle {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.benefie__title {
+  font-size: clamp(3.7rem, 3.75vw, 4rem);
+}
+.benefie__subtitle {
+  font-size: 1rem;
+}
+
 .wrapper {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.wrapper2 {
+  max-width: 73.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.old {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  letter-spacing: -0.075rem;
 }
 
 .title {
