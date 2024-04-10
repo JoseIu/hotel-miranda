@@ -1,0 +1,127 @@
+.foods {
+  padding: 7em 1em 1em 1em;
+  background-image: url('../assets/images/foods/foods.svg');
+  background-repeat: no-repeat;
+  background-position: top right -1em;
+  background-size: clamp(7.125rem, 8vw, 14.3125rem); //114px-229px
+
+  @media screen and (min-width: 800px) {
+    padding: 10em 1em 1em 1em;
+
+    background-position: top left;
+  }
+
+  &__containe {
+  }
+  &__subtitle {
+  }
+  &__title {
+    font-size: clamp(3.5rem, 3.5vw, 5rem);
+  }
+
+  &__list {
+    margin-bottom: 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 1em;
+    @media screen and (min-width: 600px) {
+      grid-template-columns: repeat(auto-fit, minmax(29em, 1fr));
+    }
+  }
+  &__slider {
+    max-width: 73.125rem;
+    overflow: hidden;
+  }
+  &__images {
+    &-list {
+      width: 300%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: 700px) {
+        width: 100%;
+        gap: 1em;
+      }
+    }
+    &-item {
+      width: calc(100% / 3);
+    }
+  }
+}
+.food {
+  width: 100%;
+
+  display: grid;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: 9.5rem auto;
+  gap: 1em;
+  &__img {
+    width: 100%;
+  }
+  &__content {
+    position: relative;
+    max-width: 35.625rem;
+    transition: all 0.2s ease;
+    @media screen and (min-width: 600px) {
+      padding: 1em 0.5em 0.5em 0.5em;
+      &:hover {
+        background-color: var(--black2-color);
+        color: var(--white-color);
+        &::after {
+          content: url('../assets/images/foods/arrow-hover.svg');
+          position: absolute;
+          top: 42%;
+          right: 0.625rem;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.3em;
+  }
+  &__description {
+    max-width: 17.75rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+}
+
+.benefies {
+  &__list {
+    padding: 5em;
+
+    background-color: var(--black2-color);
+    color: var(--white-color);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+    gap: 3em;
+  }
+}
+
+.benefie {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.3em;
+  &__img {
+    width: 4.5rem;
+  }
+  &__content {
+  }
+  &__title,
+  &__subtitle {
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+  &__title {
+    font-size: clamp(3.7rem, 3.75vw, 4rem);
+  }
+  &__subtitle {
+    font-size: 1rem;
+  }
+}
