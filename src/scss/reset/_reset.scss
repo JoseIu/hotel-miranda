@@ -157,8 +157,7 @@ body {
   font-size: 100%;
   font-family: var(--main-font);
   color: var(--negro);
-  /* (Opcional) */
-  hyphens: auto;
+  text-wrap: pretty;
   /* (Opcional) */
   font-smooth: always;
   /* (Opcional) */
