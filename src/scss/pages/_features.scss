@@ -1,8 +1,9 @@
 .features {
   padding: 1em;
+  margin-bottom: 2.625rem;
   background-color: var(--white-color);
   &--dark {
-    background-color: var(--dark-color);
+    background-color: var(--black-color);
     color: var(--white-color);
   }
   &__subtitle {
@@ -11,6 +12,7 @@
   &__title {
     text-align: center;
     font-size: clamp(3.5rem, 3.5vw, 5rem);
+    margin-bottom: 2.5rem;
   }
   &__list {
     max-width: 73.75rem;
@@ -18,8 +20,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
     gap: 2em;
-    :nth-child(1n) {
-    }
   }
 }
 
@@ -40,8 +40,11 @@
   }
 
   &--dark {
-    background-color: var(--dark-2-color);
+    background-color: var(--black2-color);
     color: var(--white-color);
+    &::after {
+      color: var(--black-color);
+    }
   }
   &__img {
     width: 4.375rem;
