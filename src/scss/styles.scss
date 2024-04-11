@@ -7,6 +7,11 @@
 @use './pages/intro';
 @use './pages/features';
 @use './pages/foods';
+@use './pages/footer';
+
+//PAGES
+@use './pages/about-us/about_us';
+@use './pages/about-us/about_fun.scss';
 
 .wrapper {
   max-width: 1400px;
@@ -29,7 +34,6 @@
   margin-bottom: 1em;
   text-transform: uppercase;
   letter-spacing: 0.175rem;
-  color: var(--black2-color);
 }
 .button {
   color: var(--white-color);
