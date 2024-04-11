@@ -1,0 +1,116 @@
+.footer {
+  background-image: url('../assets/images/footer/footer-bg.svg');
+  &__title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin-bottom: 0.5em;
+  }
+  &__logo {
+    color: red;
+  }
+  &__description {
+    max-width: 17.875rem;
+    line-height: 1.625rem;
+    color: rgba(119, 119, 119, 1);
+    margin-bottom: 2em;
+  }
+  &__container {
+    padding: 2em 1em;
+    margin-bottom: 6.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.875em, 1fr));
+    gap: 3em;
+  }
+
+  &__bottom {
+    width: 100%;
+    background-color: rgba(248, 248, 248, 1);
+    font-family: 'Roboto';
+    font-weight: 700;
+    &-container {
+      padding: 2em 1em;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &-copy {
+      display: block;
+      margin-bottom: 1em;
+    }
+    &-terms {
+      display: flex;
+      gap: 1.5em;
+    }
+    &-term {
+      position: relative;
+      &--ray::after {
+        content: '';
+        position: absolute;
+        top: 20%;
+        right: -0.8em;
+        height: 60%;
+        width: 0.15em;
+        background-color: var(--black2-color);
+      }
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 0.625rem;
+
+  &__item {
+  }
+  &__link {
+    border-radius: 0.3em;
+    padding: 0.2em;
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    &:hover {
+      background-color: var(--tbn-color);
+    }
+  }
+  &__img {
+    padding: 0.2em;
+    width: 2em;
+  }
+}
+
+.services {
+  &__title {
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+  }
+  &__item {
+    font-family: 'Roboto';
+    color: rgba(119, 119, 119, 1);
+  }
+}
+
+.contact {
+  &__list {
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  &__img {
+    width: 2.5rem;
+  }
+  &__subtitle {
+    font-size: 1.25rem;
+  }
+  &__span {
+    font-family: 'Roboto';
+    color: var(--black2-color);
+    display: block;
+    font-size: 0.875rem;
+  }
+}

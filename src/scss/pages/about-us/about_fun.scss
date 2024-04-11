@@ -1,0 +1,52 @@
+.fun {
+  margin-bottom: 7.5rem;
+  padding: 1em;
+  &__subtitle {
+  }
+  &__title {
+    font-size: clamp(3.5rem, 3.5vw, 5rem);
+    margin-bottom: 0.7em;
+  }
+  &__list {
+    margin-bottom: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+    gap: 3em;
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+    }
+    &-img {
+      width: 5.0625rem;
+      color: var(--mustard-color);
+    }
+    &-title {
+      text-align: start;
+      font-size: 3.75rem;
+    }
+    &-span {
+      display: block;
+      font-family: 'Roboto';
+      font-size: 0.9375rem;
+    }
+    &-arrow {
+      justify-self: end;
+      width: 2em;
+      color: var(--gray-color);
+    }
+  }
+
+  &__images {
+    @media screen and (min-width: 768px) {
+      display: flex;
+
+      gap: 2em;
+    }
+    &-item {
+      max-width: 35.625rem;
+    }
+    &-img {
+    }
+  }
+}
