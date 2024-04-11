@@ -1,0 +1,109 @@
+.home-component {
+  &__content {
+    padding: 6em 0 0 1em;
+    min-height: 40dvh;
+    color: var(--white-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @media screen and (min-width: 800px) {
+      padding: 6em 0 0 4em;
+    }
+  }
+  &__subtitle {
+  }
+  &__title {
+    font-size: clamp(3.25rem, 10vw, 4.5rem);
+  }
+}
+
+.about-us {
+  background-image: url(../assets/images/bg-home-2.webp);
+}
+.about-video {
+  padding: 10em 0.5em 0.5em 0.5em;
+  &__video {
+    max-width: 62.5rem;
+    background-color: rebeccapurple;
+    margin-bottom: 3em;
+  }
+  &__title {
+    max-width: 59.25rem;
+    font-size: clamp(2rem, 4vw, 4rem);
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  &__video,
+  &__title {
+    margin-inline: auto;
+  }
+  &__services {
+    margin-bottom: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.5em;
+    justify-items: center;
+  }
+
+  &__service {
+    padding: 1em;
+    transition: all 0.2s ease;
+    &:hover &-img {
+      color: var(--white-color);
+    }
+    &:hover {
+      background-color: var(--mustard-color);
+      color: var(--white-color);
+    }
+    &-img {
+      width: 4.625rem;
+      color: var(--mustard-color);
+    }
+    &-title {
+      font-family: 700;
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  &__room {
+    margin-bottom: 7.5rem;
+    padding: 3em 2em;
+    background-color: var(--white-color);
+    box-shadow: 0 0.875rem 1.5rem rgba(184, 184, 184, 0.1);
+
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    @media screen and (min-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3em;
+    }
+    &-img {
+    }
+    &-content {
+    }
+    &-subtitle {
+    }
+    &-title {
+      font-size: clamp(2.5rem, 4vw, 3rem);
+      margin-bottom: 0.3em;
+    }
+    &-description {
+      line-height: 1.5rem;
+      color: var(--gray-color);
+      margin-bottom: 2em;
+    }
+    &-button {
+      text-transform: uppercase;
+      background-color: var(--tbn-color);
+      color: var(--white-color);
+      width: 13.5rem;
+      height: 3.75rem;
+      text-align: center;
+
+      box-shadow: 0 0.875rem 1.5rem rgba(190, 173, 142, 0.36);
+    }
+  }
+}
