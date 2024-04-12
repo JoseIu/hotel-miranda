@@ -12,6 +12,7 @@
 //PAGES
 @use './pages/about-us/about_us';
 @use './pages/about-us/about_fun.scss';
+@use './pages/rooms/room';
 
 .wrapper {
   max-width: 1400px;
@@ -34,6 +35,14 @@
   margin-bottom: 1em;
   text-transform: uppercase;
   letter-spacing: 0.175rem;
+}
+.roboto {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--gary-color);
 }
 .button {
   color: var(--white-color);

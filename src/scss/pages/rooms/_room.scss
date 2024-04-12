@@ -1,0 +1,70 @@
+.rooms-list {
+  background-image: url('../assets/images/room/room.webp');
+}
+.rooms-grid {
+  padding: 1em;
+  margin-bottom: 7.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.875rem;
+
+  &--list {
+    background-color: rebeccapurple;
+    padding: 1em;
+  }
+}
+
+.room {
+  &--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__img {
+    &--list {
+      max-width: 29.375rem;
+    }
+  }
+  &__content {
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+  }
+  &__list {
+    position: relative;
+    top: -2.3em;
+    padding: 0.5rem 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--white-color);
+    box-shadow: 0 0.5625rem 1rem rgba(138, 138, 138, 0.05);
+
+    &--list {
+      position: initial;
+    }
+  }
+  &__li {
+  }
+  &__icon {
+    width: 1.5rem;
+  }
+  &__title {
+    font-size: 1.5em;
+  }
+  &__description {
+  }
+  &__price {
+    color: var(--mustard-color);
+    font-weight: 700;
+    margin-right: 1em;
+  }
+  &__booking {
+    display: inline;
+    font-weight: 700;
+    color: var(--gray-color);
+  }
+}
