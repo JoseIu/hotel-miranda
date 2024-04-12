@@ -50,18 +50,23 @@
     &-item {
       width: calc(100% / 3);
     }
+    &-img {
+      aspect-ratio: 16/9;
+    }
   }
 }
 .food {
   width: 100%;
-
   display: grid;
   align-content: center;
   align-items: center;
   grid-template-columns: 9.5rem auto;
   gap: 1em;
   &__img {
+    border-radius: 0.2em;
     width: 100%;
+    align-self: start;
+    aspect-ratio: 10 / 10;
   }
   &__content {
     position: relative;

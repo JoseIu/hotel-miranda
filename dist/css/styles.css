@@ -764,6 +764,9 @@ body {
 .foods__images-item {
   width: 33.3333333333%;
 }
+.foods__images-img {
+  aspect-ratio: 16/9;
+}
 
 .food {
   width: 100%;
@@ -774,7 +777,10 @@ body {
   gap: 1em;
 }
 .food__img {
+  border-radius: 0.2em;
   width: 100%;
+  align-self: start;
+  aspect-ratio: 10/10;
 }
 .food__content {
   position: relative;
