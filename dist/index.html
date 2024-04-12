@@ -8,8 +8,8 @@
       name="description"
       content="Hotel Miranda: Enjoy the ultimate coastal experience in our comfortable facilities. Located on the beautiful coast, Hotel Miranda is your perfect destination for a relaxing vacation."
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.min.css" /> -->
 
     <title>Miranda</title>
   </head>
@@ -20,11 +20,11 @@
           <button class="header__toggle" aria-label="toggle open menu">
             <img src="./assets/images/menu.svg" alt="image to open menu" />
           </button>
-          <div class="header__logo">
+          <a class="header__logo" href="./index.html" aria-label="retur to home">
             <img class="header__image" src="./assets/images/logo.svg" alt="hotel miranda logo" />
 
             <h1 class="header__title">Hotel <span>Miranda</span></h1>
-          </div>
+          </a>
 
           <nav class="header__nav">
             <button class="header__close" aria-label="button close menu">
@@ -32,16 +32,18 @@
             </button>
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./about_us.html">About Us </a>
+                <a class="header__nav-link" href="./about_us.html" aria-label="go to About-us"
+                  >About Us
+                </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Rooms </a>
+                <a class="header__nav-link" href="#" aria-label="go to Rooms">Rooms </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Offers </a>
+                <a class="header__nav-link" href="#" aria-label="go to Offers">Offers </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Contact </a>
+                <a class="header__nav-link" href="#" aria-label="go to Contact">Contact </a>
               </li>
             </ul>
           </nav>
@@ -142,7 +144,12 @@
         <div class="slider mySwiper">
           <div class="slider__wrapper swiper-wrapper">
             <article class="slider__item swiper-slide">
-              <img class="slider__item-img" src="./assets/images/about.webp" alt="" />
+              <img
+                class="slider__item-img"
+                src="./assets/images/about.webp"
+                loading="lazy"
+                alt="about image"
+              />
 
               <div class="slider__item-content">
                 <ul class="slider__item-list">
@@ -187,6 +194,7 @@
                 class="slider__arrow"
                 src="./assets/images/rooms/arrow-left.svg"
                 alt="arrow icon"
+                loading="lazy"
               />
             </button>
             <button class="slider__button slider__arrow-next" aria-label="slider button next ">
@@ -194,6 +202,7 @@
                 class="slider__arrow"
                 src="./assets/images/rooms/arrow-right.svg"
                 alt="arrow icon"
+                loading="lazy"
               />
             </button>
           </div>
@@ -225,7 +234,12 @@
         <div class="features__list">
           <!-- 1 -->
           <article class="feature">
-            <img class="feature__img" src="./assets/images/features/starts.svg" alt="rating icon" />
+            <img
+              class="feature__img"
+              src="./assets/images/features/starts.svg"
+              alt="rating icon"
+              loading="lazy"
+            />
 
             <div class="feature__content">
               <h3 class="feature__title old">Have High Rating</h3>
@@ -241,6 +255,7 @@
               class="feature__img"
               src="./assets/images/features/clock.svg"
               alt="quiet Hours icon"
+              loading="lazy"
             />
 
             <div class="feature__content">
@@ -257,6 +272,7 @@
               class="feature__img"
               src="./assets/images/features/location.svg"
               alt="best location icon"
+              loading="lazy"
             />
 
             <div class="feature__content">
@@ -273,6 +289,7 @@
               class="feature__img"
               src="./assets/images/features/clock-cross.svg"
               alt="free Cancellation icon"
+              loading="lazy"
             />
 
             <div class="feature__content">
@@ -289,6 +306,7 @@
               class="feature__img"
               src="./assets/images/features/credit.svg"
               alt="payment card icon"
+              loading="lazy"
             />
 
             <div class="feature__content">
@@ -305,6 +323,7 @@
               class="feature__img"
               src="./assets/images/features/offer.svg"
               alt="Special Offers icon"
+              loading="lazy"
             />
 
             <div class="feature__content">
@@ -422,13 +441,28 @@
           <div class="foods__slider">
             <ul class="foods__images-list">
               <li class="foods__images-item">
-                <img src="./assets/images/foods/food-1.webp" alt="image food" />
+                <img
+                  class="foods__images-img"
+                  src="./assets/images/foods/food-1.webp"
+                  alt="image food"
+                  loading="lazy"
+                />
               </li>
               <li class="foods__images-item">
-                <img src="./assets/images/foods/food-2.webp" alt="image food" />
+                <img
+                  class="foods__images-img"
+                  src="./assets/images/foods/food-2.webp"
+                  alt="image food"
+                  loading="lazy"
+                />
               </li>
               <li class="foods__images-item">
-                <img src="./assets/images/foods/food-3.webp" alt="image food" />
+                <img
+                  class="foods__images-img"
+                  src="./assets/images/foods/food-3.webp"
+                  alt="image food"
+                  loading="lazy"
+                />
               </li>
             </ul>
           </div>
@@ -443,6 +477,7 @@
               class="benefie__img"
               src="./assets/images/foods/rocket.svg"
               alt="benefies rocket image"
+              loading="lazy"
             />
 
             <div class="benefie__content">
@@ -457,6 +492,7 @@
               class="benefie__img"
               src="./assets/images/foods/people.svg"
               alt="benefies rocket image"
+              loading="lazy"
             />
 
             <div class="benefie__content">
@@ -470,6 +506,7 @@
               class="benefie__img"
               src="./assets/images/foods/grafic.svg"
               alt="benefies rocket image"
+              loading="lazy"
             />
 
             <div class="benefie__content">
@@ -483,6 +520,7 @@
               class="benefie__img"
               src="./assets/images/foods/book.svg"
               alt="benefies rocket image"
+              loading="lazy"
             />
 
             <div class="benefie__content">
@@ -514,7 +552,13 @@
             <ul class="socials">
               <!-- 1 -->
               <li class="socials__item">
-                <a class="socials__link" href="#" rel="noreferrer noopener" target="_blank">
+                <a
+                  class="socials__link"
+                  href="#"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  aria-label="link to facebook"
+                >
                   <svg
                     class="socials__img"
                     xmlns="http://www.w3.org/2000/svg"
@@ -529,7 +573,13 @@
               </li>
               <!-- 2 -->
               <li class="socials__item">
-                <a class="socials__link" href="#" rel="noreferrer noopener" target="_blank">
+                <a
+                  class="socials__link"
+                  href="#"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  aria-label="link to twitter"
+                >
                   <svg
                     class="socials__img"
                     xmlns="http://www.w3.org/2000/svg"
@@ -544,7 +594,13 @@
               </li>
               <!-- 3 -->
               <li class="socials__item">
-                <a class="socials__link" href="#" rel="noreferrer noopener" target="_blank">
+                <a
+                  class="socials__link"
+                  href="#"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  aria-label="link to Behance"
+                >
                   <svg
                     class="socials__img"
                     xmlns="http://www.w3.org/2000/svg"
@@ -560,7 +616,13 @@
               </li>
               <!-- 4 -->
               <li class="socials__item">
-                <a class="socials__link" href="#" rel="noreferrer noopener" target="_blank">
+                <a
+                  class="socials__link"
+                  href="#"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  aria-label="link to LinkdIn"
+                >
                   <svg
                     class="socials__img"
                     xmlns="http://www.w3.org/2000/svg"
@@ -575,7 +637,13 @@
               </li>
               <!-- 5 -->
               <li class="socials__item">
-                <a class="socials__link" href="#" rel="noreferrer noopener" target="_blank">
+                <a
+                  class="socials__link"
+                  href="#"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  aria-label="link to youtube"
+                >
                   <svg
                     class="socials__img"
                     xmlns="http://www.w3.org/2000/svg"
@@ -613,13 +681,23 @@
 
             <ul class="contact__list">
               <li class="contact__item">
-                <img class="contact__img" src="./assets/images/footer/phone.svg" alt="phone icon" />
+                <img
+                  class="contact__img"
+                  src="./assets/images/footer/phone.svg"
+                  alt="phone icon"
+                  loading="lazy"
+                />
                 <p class="contact__subtitle old">
                   Phone Number <span class="contact__span">+987 876 765 76 577</span>
                 </p>
               </li>
               <li class="contact__item">
-                <img class="contact__img" src="./assets/images/footer/email.svg" alt="phone icon" />
+                <img
+                  class="contact__img"
+                  src="./assets/images/footer/email.svg"
+                  alt="phone icon"
+                  loading="lazy"
+                />
                 <p class="contact__subtitle old">
                   Phone Number <span class="contact__span">+987 876 765 76 577</span>
                 </p>
@@ -629,6 +707,7 @@
                   class="contact__img"
                   src="./assets/images/footer/location-2.svg"
                   alt="phone icon"
+                  loading="lazy"
                 />
                 <p class="contact__subtitle old">
                   Phone Number <span class="contact__span">+987 876 765 76 577</span>
