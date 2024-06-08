@@ -1,5 +1,24 @@
 .rooms-list {
-  background-image: url('../assets/images/room/room.webp');
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/room/bg-image.webp');
+  margin-bottom: 3rem;
+}
+.rooms-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 70%),
+    linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0) 50%);
+}
+.room-home {
+  padding-top: 5rem;
+  position: sticky;
 }
 .rooms-grid {
   padding: 1em;
@@ -9,7 +28,6 @@
   gap: 1.875rem;
 
   &--list {
-    background-color: rebeccapurple;
     padding: 1em;
   }
 }
@@ -17,9 +35,11 @@
 .room {
   &--list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 29.375rem auto;
+    gap: 1.5rem;
   }
   &__img {
+    border-radius: 0.4rem;
     &--list {
       max-width: 29.375rem;
     }
@@ -31,6 +51,16 @@
     flex-direction: column;
     align-items: center;
     row-gap: 0.5rem;
+    &--list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
   }
   &__list {
     position: relative;
@@ -56,8 +86,20 @@
     font-size: 1.5em;
   }
   &__description {
+    text-align: start;
+  }
+  &__prices {
+    &--list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
   }
   &__price {
+    &--list {
+      font-size: 2em;
+    }
     color: var(--mustard-color);
     font-weight: 700;
     margin-right: 1em;
