@@ -1,13 +1,14 @@
 .home-component {
+  position: relative;
   &__content {
     padding: 6em 0 0 1em;
-    min-height: 40dvh;
+    min-height: 50dvh;
     color: var(--white-color);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     @media screen and (min-width: 800px) {
-      padding: 6em 0 0 4em;
+      padding: 6rem 0 0 4em;
     }
   }
   &__subtitle {
