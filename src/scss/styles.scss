@@ -13,6 +13,7 @@
 @use './pages/about-us/about_us';
 @use './pages/about-us/about_fun.scss';
 @use './pages/rooms/room';
+@use './pages/offers/offers';
 
 .wrapper {
   max-width: 1400px;
@@ -54,4 +55,23 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+}
+.swiper {
+  max-width: 80rem;
+  height: 600px;
+}
+.swiper-wrapper {
+}
+.slider__item {
+  padding: 1rem;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--white-color);
+  height: 2rem;
+  width: 2rem;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
 }
