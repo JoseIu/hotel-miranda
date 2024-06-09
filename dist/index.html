@@ -8,6 +8,9 @@
       name="description"
       content="Hotel Miranda: Enjoy the ultimate coastal experience in our comfortable facilities. Located on the beautiful coast, Hotel Miranda is your perfect destination for a relaxing vacation."
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/styles.min.css" />
 
@@ -40,7 +43,9 @@
                 <a class="header__nav-link" href="./room.html" aria-label="go to Rooms">Rooms </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#" aria-label="go to Offers">Offers </a>
+                <a class="header__nav-link" href="./our_offer.html" aria-label="go to Offers"
+                  >Offers
+                </a>
               </li>
               <li class="header__nav-item">
                 <a class="header__nav-link" href="#" aria-label="go to Contact">Contact </a>
@@ -141,70 +146,259 @@
         <h2 class="rooms__subtitle title">rooms</h2>
         <h3 class="rooms__title">Hand Picked Rooms</h3>
 
-        <div class="slider mySwiper">
-          <div class="slider__wrapper swiper-wrapper">
-            <article class="slider__item swiper-slide">
-              <img
-                class="slider__item-img"
-                src="./assets/images/about.webp"
-                loading="lazy"
-                alt="about image"
-              />
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <article class="slider__item">
+                <img
+                  class="slider__item-img"
+                  src="./assets/images/about.webp"
+                  loading="lazy"
+                  alt="about image"
+                />
 
-              <div class="slider__item-content">
-                <ul class="slider__item-list">
-                  <li class="slider__item-li">
-                    <img src="./assets/images/rooms/bed.svg" alt="bed icon" />
-                  </li>
-                  <li class="slider__item-li">
-                    <img src="./assets/images/rooms/wifi.svg" alt="free-wifi icon" />
-                  </li>
-                  <li class="slider__item-li">
-                    <img src="./assets/images/rooms/car.svg" alt="parking-free icon" />
-                  </li>
-                  <li class="slider__item-li">
-                    <img src="./assets/images/rooms/snow.svg" alt="snow icon" />
-                  </li>
-                  <li class="slider__item-li">
-                    <img src="./assets/images/rooms/dumbbells.svg" alt="gym icon" />
-                  </li>
-                  <li class="slider__item-li">
-                    <img src="./assets/images/rooms/cigar.svg" alt="no smoking icon" />
-                  </li>
-                  <li class="slider__item-li">
-                    <img src="./assets/images/rooms/cup.svg" alt="cup icon" />
-                  </li>
-                </ul>
-                <div class="slider__item-description">
-                  <div>
-                    <h3 class="slider__item-title">Minimal Duplex Room</h3>
-                    <p class="slider__item-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore.
-                    </p>
+                <div class="slider__item-content">
+                  <ul class="slider__item-list">
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/bed.svg" alt="bed icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/wifi.svg" alt="free-wifi icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/car.svg" alt="parking-free icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/snow.svg" alt="snow icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/dumbbells.svg" alt="gym icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cigar.svg" alt="no smoking icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cup.svg" alt="cup icon" />
+                    </li>
+                  </ul>
+                  <div class="slider__item-description">
+                    <div>
+                      <h3 class="slider__item-title">Minimal Duplex Room</h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore.
+                      </p>
+                    </div>
+                    <span class="slider__item-price">$345/Night</span>
                   </div>
-                  <span class="slider__item-price">$345/Night</span>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="slider__item">
+                <img
+                  class="slider__item-img"
+                  src="./assets/images/about.webp"
+                  loading="lazy"
+                  alt="about image"
+                />
+
+                <div class="slider__item-content">
+                  <ul class="slider__item-list">
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/bed.svg" alt="bed icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/wifi.svg" alt="free-wifi icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/car.svg" alt="parking-free icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/snow.svg" alt="snow icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/dumbbells.svg" alt="gym icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cigar.svg" alt="no smoking icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cup.svg" alt="cup icon" />
+                    </li>
+                  </ul>
+                  <div class="slider__item-description">
+                    <div>
+                      <h3 class="slider__item-title">Minimal Duplex Room</h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore.
+                      </p>
+                    </div>
+                    <span class="slider__item-price">$345/Night</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="slider__item">
+                <img
+                  class="slider__item-img"
+                  src="./assets/images/about.webp"
+                  loading="lazy"
+                  alt="about image"
+                />
+
+                <div class="slider__item-content">
+                  <ul class="slider__item-list">
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/bed.svg" alt="bed icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/wifi.svg" alt="free-wifi icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/car.svg" alt="parking-free icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/snow.svg" alt="snow icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/dumbbells.svg" alt="gym icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cigar.svg" alt="no smoking icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cup.svg" alt="cup icon" />
+                    </li>
+                  </ul>
+                  <div class="slider__item-description">
+                    <div>
+                      <h3 class="slider__item-title">Minimal Duplex Room</h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore.
+                      </p>
+                    </div>
+                    <span class="slider__item-price">$345/Night</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="slider__item">
+                <img
+                  class="slider__item-img"
+                  src="./assets/images/about.webp"
+                  loading="lazy"
+                  alt="about image"
+                />
+
+                <div class="slider__item-content">
+                  <ul class="slider__item-list">
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/bed.svg" alt="bed icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/wifi.svg" alt="free-wifi icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/car.svg" alt="parking-free icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/snow.svg" alt="snow icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/dumbbells.svg" alt="gym icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cigar.svg" alt="no smoking icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cup.svg" alt="cup icon" />
+                    </li>
+                  </ul>
+                  <div class="slider__item-description">
+                    <div>
+                      <h3 class="slider__item-title">Minimal Duplex Room</h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore.
+                      </p>
+                    </div>
+                    <span class="slider__item-price">$345/Night</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="slider__item">
+                <img
+                  class="slider__item-img"
+                  src="./assets/images/about.webp"
+                  loading="lazy"
+                  alt="about image"
+                />
+
+                <div class="slider__item-content">
+                  <ul class="slider__item-list">
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/bed.svg" alt="bed icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/wifi.svg" alt="free-wifi icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/car.svg" alt="parking-free icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/snow.svg" alt="snow icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/dumbbells.svg" alt="gym icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cigar.svg" alt="no smoking icon" />
+                    </li>
+                    <li class="slider__item-li">
+                      <img src="./assets/images/rooms/cup.svg" alt="cup icon" />
+                    </li>
+                  </ul>
+                  <div class="slider__item-description">
+                    <div>
+                      <h3 class="slider__item-title">Minimal Duplex Room</h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore.
+                      </p>
+                    </div>
+                    <span class="slider__item-price">$345/Night</span>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="slider__buttons">
-            <button class="slider__button slider__arrow-prev" aria-label="slider button previus ">
-              <img
-                class="slider__arrow"
-                src="./assets/images/rooms/arrow-left.svg"
-                alt="arrow icon"
-                loading="lazy"
-              />
-            </button>
-            <button class="slider__button slider__arrow-next" aria-label="slider button next ">
-              <img
-                class="slider__arrow"
-                src="./assets/images/rooms/arrow-right.svg"
-                alt="arrow icon"
-                loading="lazy"
-              />
-            </button>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <img
+              class="slider__arrow"
+              src="./assets/images/rooms/arrow-left.svg"
+              alt="arrow icon"
+              loading="lazy"
+            />
+          </div>
+          <div class="swiper-button-next">
+            <img
+              class="slider__arrow"
+              src="./assets/images/rooms/arrow-right.svg"
+              alt="arrow icon"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
