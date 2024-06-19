@@ -20,9 +20,14 @@
     <header class="header">
       <div class="header__container wrapper">
         <div class="header__content">
-          <button class="header__toggle" aria-label="toggle open menu">
-            <img src="./assets/images/menu.svg" alt="image to open menu" />
-          </button>
+          <div class="header__actions">
+            <button class="header__toggle" aria-label="toggle open menu">
+              <img src="./assets/images/menu.svg" alt="icon menu" />
+            </button>
+            <button class="header__close header__toggle--hidden" aria-label="button close menu">
+              <img src="./assets/images/cross.svg" alt="close menu" />
+            </button>
+          </div>
           <a class="header__logo" href="./index.html" aria-label="retur to home">
             <img class="header__image" src="./assets/images/logo.svg" alt="hotel miranda logo" />
 
@@ -30,9 +35,6 @@
           </a>
 
           <nav class="header__nav">
-            <button class="header__close" aria-label="button close menu">
-              <img src="./assets/images/cross.svg" alt="close menu" />
-            </button>
             <ul class="header__nav-list">
               <li class="header__nav-item">
                 <a class="header__nav-link" href="./about_us.html" aria-label="go to About-us"
@@ -48,7 +50,9 @@
                 </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#" aria-label="go to Contact">Contact </a>
+                <a class="header__nav-link" href="./contact.html" aria-label="go to Contact"
+                  >Contact
+                </a>
               </li>
             </ul>
           </nav>
@@ -155,7 +159,7 @@
               <article class="slider__item">
                 <img
                   class="slider__item-img"
-                  src="./assets/images/about.webp"
+                  src="./assets/images/room/big/room-big1.webp"
                   loading="lazy"
                   alt="about image"
                 />
@@ -201,7 +205,7 @@
               <article class="slider__item">
                 <img
                   class="slider__item-img"
-                  src="./assets/images/about.webp"
+                  src="./assets/images/room/big/room-big2.webp"
                   loading="lazy"
                   alt="about image"
                 />
@@ -247,7 +251,7 @@
               <article class="slider__item">
                 <img
                   class="slider__item-img"
-                  src="./assets/images/about.webp"
+                  src="./assets/images/room/big/room-big3.webp"
                   loading="lazy"
                   alt="about image"
                 />
@@ -293,7 +297,7 @@
               <article class="slider__item">
                 <img
                   class="slider__item-img"
-                  src="./assets/images/about.webp"
+                  src="./assets/images/room/big/room-big4.webp"
                   loading="lazy"
                   alt="about image"
                 />
@@ -339,7 +343,7 @@
               <article class="slider__item">
                 <img
                   class="slider__item-img"
-                  src="./assets/images/about.webp"
+                  src="./assets/images/room/big/room-big5.webp"
                   loading="lazy"
                   alt="about image"
                 />
@@ -421,7 +425,7 @@
         </div>
       </section>
 
-      <section class="features">
+      <section class="features wrapper2">
         <h2 class="features__subtitle title">Facilities</h2>
         <h3 class="features__title old">Core Features</h3>
 
