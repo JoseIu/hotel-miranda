@@ -1,0 +1,43 @@
+.contacts {
+  padding-top: 6rem;
+  margin-bottom: 5rem;
+  &__features {
+    margin-bottom: 6rem;
+  }
+}
+.form {
+  max-width: 100%;
+  padding: 1rem;
+  margin-bottom: 10rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  &__row {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(248, 248, 248, 1);
+  }
+
+  &__icon {
+    width: 1.5rem;
+    color: rgba(190, 173, 142, 1);
+  }
+  &__input {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  &__btn {
+    margin-inline: auto;
+  }
+}
