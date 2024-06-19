@@ -14,7 +14,8 @@
 @use './pages/about-us/about_fun.scss';
 @use './pages/rooms/room';
 @use './pages/offers/offers';
-
+@use './pages/room_details/room_details';
+@use './pages/contact/contact';
 .wrapper {
   max-width: 1400px;
   margin-left: auto;
@@ -33,7 +34,7 @@
 .title {
   font-size: clamp(0.8125rem, 2vw, 1rem);
   font-weight: 700;
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
   text-transform: uppercase;
   letter-spacing: 0.175rem;
 }
@@ -42,7 +43,7 @@
   font-weight: 400;
   font-size: 0.875em;
   line-height: 1.5rem;
-  text-align: center;
+  // text-align: center;
   color: var(--gary-color);
 }
 .button {

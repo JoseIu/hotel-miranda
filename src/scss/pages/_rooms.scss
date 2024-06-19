@@ -30,6 +30,10 @@
     align-items: center;
     justify-content: space-between;
   }
+  &-img {
+    aspect-ratio: 16/12;
+    height: 100%;
+  }
   &-list {
     width: 90%;
     padding: 0.5em;

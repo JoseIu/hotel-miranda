@@ -16,31 +16,39 @@
     <header class="header">
       <div class="header__container wrapper">
         <div class="header__content">
-          <button class="header__toggle" aria-label="toggle open menu">
-            <img src="./assets/images/menu.svg" alt="image to open menu" />
-          </button>
-          <a class="header__logo" href="./index.html">
+          <div class="header__actions">
+            <button class="header__toggle" aria-label="toggle open menu">
+              <img src="./assets/images/menu.svg" alt="icon menu" />
+            </button>
+            <button class="header__close header__toggle--hidden" aria-label="button close menu">
+              <img src="./assets/images/cross.svg" alt="close menu" />
+            </button>
+          </div>
+          <a class="header__logo" href="./index.html" aria-label="retur to home">
             <img class="header__image" src="./assets/images/logo.svg" alt="hotel miranda logo" />
 
             <h1 class="header__title">Hotel <span>Miranda</span></h1>
           </a>
 
           <nav class="header__nav">
-            <button class="header__close" aria-label="button close menu">
-              <img src="./assets/images/cross.svg" loading="lazy" alt="close menu" />
-            </button>
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./about_us.html">About Us </a>
+                <a class="header__nav-link" href="./about_us.html" aria-label="go to About-us"
+                  >About Us
+                </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./room.html">Rooms </a>
+                <a class="header__nav-link" href="./room.html" aria-label="go to Rooms">Rooms </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Offers </a>
+                <a class="header__nav-link" href="./our_offer.html" aria-label="go to Offers"
+                  >Offers
+                </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Contact </a>
+                <a class="header__nav-link" href="./contact.html" aria-label="go to Contact"
+                  >Contact
+                </a>
               </li>
             </ul>
           </nav>
@@ -49,22 +57,12 @@
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="#">
-              <img
-                class="header__icon"
-                src="./assets/images/profile.svg"
-                loading="lazy"
-                alt="profile icon"
-              />
+              <img class="header__icon" src="./assets/images/profile.svg" alt="profile icon" />
             </a>
           </li>
           <li class="header__item">
             <a class="header__link" href="#">
-              <img
-                class="header__icon"
-                src="./assets/images/search.svg"
-                loading="lazy"
-                alt="search icon"
-              />
+              <img class="header__icon" src="./assets/images/search.svg" alt="search icon" />
             </a>
           </li>
         </ul>
@@ -86,7 +84,103 @@
       <section class="offers wrapper2">
         <article class="offer">
           <div class="offer__image">
-            <img class="offer__img" src="./assets/images/room/room.webp" alt="" />
+            <img class="offer__img" src="./assets/images/room/big/room-big1.webp" alt="room 1" />
+            <div class="offer__prices offer__prices--mobile">
+              <span class="offer__price offer__price--original">$500/night</span>
+              <span class="offer__price offer__price--offer">$345/night</span>
+            </div>
+          </div>
+
+          <div class="offer__content">
+            <div>
+              <span class="offer__subtitle title">Double Bed</span>
+              <h2 class="offer__title old">Luxury Double Bed</h2>
+            </div>
+            <div class="offer__prices---desk">
+              <span class="offer__price offer__price--original">$500/night</span>
+              <span class="offer__price offer__price--offer">$345/night</span>
+            </div>
+            <p class="offer__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.
+            </p>
+            <ul class="offer__aminities roboto">
+              <li class="offer__aminitie">
+                <img
+                  class="offer__icon"
+                  src="./assets/images/rooms/snow.svg"
+                  alt="icon Air conditioner "
+                />
+                <span>Air conditioner</span>
+              </li>
+              <li class="offer__aminitie">
+                <img
+                  class="offer__icon"
+                  src="./assets/images/rooms/wifi.svg"
+                  alt="icon free wifi"
+                />
+                <span>High speed WiFi</span>
+              </li>
+              <li class="offer__aminitie">
+                <img
+                  class="offer__icon"
+                  src="./assets/images/rooms/wifi.svg"
+                  alt="icon free wifi"
+                />
+                <span>Breakfast</span>
+              </li>
+              <li class="offer__aminitie">
+                <img
+                  class="offer__icon"
+                  src="./assets/images/rooms/kitchen.svg"
+                  alt="icon kitchen"
+                />
+                <span>Kitchen</span>
+              </li>
+              <li class="offer__aminitie">
+                <img
+                  class="offer__icon"
+                  src="./assets/images/rooms/cleaning.svg"
+                  alt="icon cleaning"
+                />
+
+                <span>Cleaning</span>
+              </li>
+              <li class="offer__aminitie">
+                <img class="offer__icon" src="./assets/images/rooms/shower.svg" alt="icon shower" />
+
+                <span>Shower</span>
+              </li>
+              <li class="offer__aminitie">
+                <img
+                  class="offer__icon"
+                  src="./assets/images/rooms/grocery.svg"
+                  alt="icon grocery"
+                />
+                <span>Grocery</span>
+              </li>
+              <li class="offer__aminitie">
+                <img class="offer__icon" src="./assets/images/rooms/bed.svg" alt="icon bed" />
+                <span>Single bed</span>
+              </li>
+              <li class="offer__aminitie">
+                <img class="offer__icon" src="./assets/images/rooms/shop.svg" alt="icon Shop" />
+                <span>Shop near</span>
+              </li>
+              <li class="offer__aminitie">
+                <img class="offer__icon" src="./assets/images/rooms/towels.svg" alt="icon towels" />
+                <span>Towels</span>
+              </li>
+            </ul>
+            <button class="offer__btn">Book Now</button>
+          </div>
+        </article>
+        <article class="offer">
+          <div class="offer__image">
+            <img class="offer__img" src="./assets/images/room/big/room-big2.webp " alt="room 2" />
             <div class="offer__prices">
               <span class="offer__price offer__price--original">$500/night</span>
               <span class="offer__price offer__price--offer">$345/night</span>
@@ -182,7 +276,7 @@
         </article>
         <article class="offer">
           <div class="offer__image">
-            <img class="offer__img" src="./assets/images/room/room.webp" alt="" />
+            <img class="offer__img" src="./assets/images/room/big/room-big3.webp " alt="room 3" />
             <div class="offer__prices">
               <span class="offer__price offer__price--original">$500/night</span>
               <span class="offer__price offer__price--offer">$345/night</span>
@@ -278,7 +372,7 @@
         </article>
         <article class="offer">
           <div class="offer__image">
-            <img class="offer__img" src="./assets/images/room/room.webp" alt="" />
+            <img class="offer__img" src="./assets/images/room/big/room-big4.webp" alt="room 4" />
             <div class="offer__prices">
               <span class="offer__price offer__price--original">$500/night</span>
               <span class="offer__price offer__price--offer">$345/night</span>
@@ -374,103 +468,7 @@
         </article>
         <article class="offer">
           <div class="offer__image">
-            <img class="offer__img" src="./assets/images/room/room.webp" alt="" />
-            <div class="offer__prices">
-              <span class="offer__price offer__price--original">$500/night</span>
-              <span class="offer__price offer__price--offer">$345/night</span>
-            </div>
-          </div>
-
-          <div class="offer__content">
-            <div>
-              <span class="offer__subtitle title">Double Bed</span>
-              <h2 class="offer__title old">Luxury Double Bed</h2>
-            </div>
-            <div class="offer__prices---desk">
-              <span class="offer__price offer__price--original">$500/night</span>
-              <span class="offer__price offer__price--offer">$345/night</span>
-            </div>
-            <p class="offer__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur.
-            </p>
-            <ul class="offer__aminities roboto">
-              <li class="offer__aminitie">
-                <img
-                  class="offer__icon"
-                  src="./assets/images/rooms/snow.svg"
-                  alt="icon Air conditioner "
-                />
-                <span>Air conditioner</span>
-              </li>
-              <li class="offer__aminitie">
-                <img
-                  class="offer__icon"
-                  src="./assets/images/rooms/wifi.svg"
-                  alt="icon free wifi"
-                />
-                <span>High speed WiFi</span>
-              </li>
-              <li class="offer__aminitie">
-                <img
-                  class="offer__icon"
-                  src="./assets/images/rooms/wifi.svg"
-                  alt="icon free wifi"
-                />
-                <span>Breakfast</span>
-              </li>
-              <li class="offer__aminitie">
-                <img
-                  class="offer__icon"
-                  src="./assets/images/rooms/kitchen.svg"
-                  alt="icon kitchen"
-                />
-                <span>Kitchen</span>
-              </li>
-              <li class="offer__aminitie">
-                <img
-                  class="offer__icon"
-                  src="./assets/images/rooms/cleaning.svg"
-                  alt="icon cleaning"
-                />
-
-                <span>Cleaning</span>
-              </li>
-              <li class="offer__aminitie">
-                <img class="offer__icon" src="./assets/images/rooms/shower.svg" alt="icon shower" />
-
-                <span>Shower</span>
-              </li>
-              <li class="offer__aminitie">
-                <img
-                  class="offer__icon"
-                  src="./assets/images/rooms/grocery.svg"
-                  alt="icon grocery"
-                />
-                <span>Grocery</span>
-              </li>
-              <li class="offer__aminitie">
-                <img class="offer__icon" src="./assets/images/rooms/bed.svg" alt="icon bed" />
-                <span>Single bed</span>
-              </li>
-              <li class="offer__aminitie">
-                <img class="offer__icon" src="./assets/images/rooms/shop.svg" alt="icon Shop" />
-                <span>Shop near</span>
-              </li>
-              <li class="offer__aminitie">
-                <img class="offer__icon" src="./assets/images/rooms/towels.svg" alt="icon towels" />
-                <span>Towels</span>
-              </li>
-            </ul>
-            <button class="offer__btn">Book Now</button>
-          </div>
-        </article>
-        <article class="offer">
-          <div class="offer__image">
-            <img class="offer__img" src="./assets/images/room/room.webp" alt="" />
+            <img class="offer__img" src="./assets/images/room/big/room-big5.webp" alt="room 5 />
             <div class="offer__prices">
               <span class="offer__price offer__price--original">$500/night</span>
               <span class="offer__price offer__price--offer">$345/night</span>

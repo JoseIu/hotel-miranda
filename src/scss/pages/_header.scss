@@ -28,8 +28,17 @@
       gap: 6em;
     }
   }
-  &__toggle {
+  &__actions {
     @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__toggle {
+    transition: all 0.3s ease;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    &--hidden {
       display: none;
     }
   }
@@ -54,12 +63,9 @@
     display: flex;
     gap: 1em;
   }
-  &__item {
-  }
+
   &__link {
     width: 1.5em;
-  }
-  &__icon {
   }
 
   &__nav {
@@ -85,8 +91,7 @@
         gap: 1.3em;
       }
     }
-    &-item {
-    }
+
     &-link {
       transition: all 0.3s ease;
       @media (hover: hover) {
@@ -97,6 +102,7 @@
     }
   }
   &__nav--active {
+    padding-top: 2rem;
     transform: translateY(40%);
     background-color: var(--white-color);
   }
