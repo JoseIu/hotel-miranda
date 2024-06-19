@@ -16,31 +16,39 @@
     <header class="header">
       <div class="header__container wrapper">
         <div class="header__content">
-          <button class="header__toggle" aria-label="toggle open menu">
-            <img src="./assets/images/menu.svg" alt="image to open menu" />
-          </button>
-          <a class="header__logo" href="./index.html">
+          <div class="header__actions">
+            <button class="header__toggle" aria-label="toggle open menu">
+              <img src="./assets/images/menu.svg" alt="icon menu" />
+            </button>
+            <button class="header__close header__toggle--hidden" aria-label="button close menu">
+              <img src="./assets/images/cross.svg" alt="close menu" />
+            </button>
+          </div>
+          <a class="header__logo" href="./index.html" aria-label="retur to home">
             <img class="header__image" src="./assets/images/logo.svg" alt="hotel miranda logo" />
 
             <h1 class="header__title">Hotel <span>Miranda</span></h1>
           </a>
 
           <nav class="header__nav">
-            <button class="header__close" aria-label="button close menu">
-              <img src="./assets/images/cross.svg" loading="lazy" alt="close menu" />
-            </button>
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./about_us.html">About Us </a>
+                <a class="header__nav-link" href="./about_us.html" aria-label="go to About-us"
+                  >About Us
+                </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./room.html">Rooms </a>
+                <a class="header__nav-link" href="./room.html" aria-label="go to Rooms">Rooms </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Offers </a>
+                <a class="header__nav-link" href="./our_offer.html" aria-label="go to Offers"
+                  >Offers
+                </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Contact </a>
+                <a class="header__nav-link" href="./contact.html" aria-label="go to Contact"
+                  >Contact
+                </a>
               </li>
             </ul>
           </nav>
@@ -49,22 +57,12 @@
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="#">
-              <img
-                class="header__icon"
-                src="./assets/images/profile.svg"
-                loading="lazy"
-                alt="profile icon"
-              />
+              <img class="header__icon" src="./assets/images/profile.svg" alt="profile icon" />
             </a>
           </li>
           <li class="header__item">
             <a class="header__link" href="#">
-              <img
-                class="header__icon"
-                src="./assets/images/search.svg"
-                loading="lazy"
-                alt="search icon"
-              />
+              <img class="header__icon" src="./assets/images/search.svg" alt="search icon" />
             </a>
           </li>
         </ul>
