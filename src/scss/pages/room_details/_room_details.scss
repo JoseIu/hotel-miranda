@@ -1,0 +1,118 @@
+.room-details {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  @media screen and (min-width: 900px) {
+    grid-template-columns: auto 1fr;
+  }
+}
+.room-detail {
+  position: relative;
+  &__image {
+    border-radius: 0.4rem;
+  }
+  &__info {
+    padding: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+  }
+  &__price {
+    font-weight: 600;
+    color: rgba(190, 173, 142, 1);
+    font-size: clamp(1.1rem, 2vw, 1.8rem);
+  }
+}
+.room-form {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  &__input {
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(248, 248, 248, 1);
+  }
+  &__btn {
+    margin-inline: auto;
+  }
+}
+.room-description {
+  padding: 1rem;
+  max-width: 48.125rem;
+
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.room-founder {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8rem;
+}
+.founder {
+  padding: 3rem 1rem;
+  max-width: 23.125rem;
+
+  box-shadow: 0 0.875rem 1.5rem 0 rgba(190, 173, 142, 0.27);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  &__img {
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+  }
+  &__info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  &__title {
+  }
+  &__subtitle {
+    color: rgba(189, 172, 141, 1);
+  }
+  &__description {
+    line-height: 1.5rem;
+  }
+}
+.room-cancellation {
+  &__title {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+  }
+  &__decription {
+    max-width: 41.25rem;
+  }
+}
+.related-rooms {
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  &__title {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+}
