@@ -1,12 +1,17 @@
 .offers {
-  display: flex;
+  width: 100%;
+  margin-bottom: 10rem;
+  display: grid;
   flex-direction: column;
-  align-items: center;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  gap: 2rem;
 }
 
 .offer {
-  max-width: 100%;
-  width: 60rem;
+  max-width: 70rem;
+  box-shadow: 0 0.875rem 1.5rem 0 rgba(190, 173, 142, 0.27);
+
   @media screen and (min-width: 768px) {
     position: relative;
   }
@@ -14,7 +19,9 @@
     position: relative;
   }
   &__img {
-    max-height: 34rem;
+    aspect-ratio: 18/9;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
   }
   &__prices {
     position: absolute;
@@ -33,6 +40,12 @@
         margin-left: auto;
       }
     }
+    @media screen and (max-width: 768px) {
+      &---desk {
+        display: none;
+      }
+    }
+    // &--mobile{}
   }
   &__price {
     font-weight: 700;
