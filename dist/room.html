@@ -16,31 +16,39 @@
     <header class="header">
       <div class="header__container wrapper">
         <div class="header__content">
-          <button class="header__toggle" aria-label="toggle open menu">
-            <img src="./assets/images/menu.svg" alt="image to open menu" />
-          </button>
-          <a class="header__logo" href="./index.html">
+          <div class="header__actions">
+            <button class="header__toggle" aria-label="toggle open menu">
+              <img src="./assets/images/menu.svg" alt="icon menu" />
+            </button>
+            <button class="header__close header__toggle--hidden" aria-label="button close menu">
+              <img src="./assets/images/cross.svg" alt="close menu" />
+            </button>
+          </div>
+          <a class="header__logo" href="./index.html" aria-label="retur to home">
             <img class="header__image" src="./assets/images/logo.svg" alt="hotel miranda logo" />
 
             <h1 class="header__title">Hotel <span>Miranda</span></h1>
           </a>
 
           <nav class="header__nav">
-            <button class="header__close" aria-label="button close menu">
-              <img src="./assets/images/cross.svg" loading="lazy" alt="close menu" />
-            </button>
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./about_us.html">About Us </a>
+                <a class="header__nav-link" href="./about_us.html" aria-label="go to About-us"
+                  >About Us
+                </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./room.html">Rooms </a>
+                <a class="header__nav-link" href="./room.html" aria-label="go to Rooms">Rooms </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="./our_offer.html">Offers </a>
+                <a class="header__nav-link" href="./our_offer.html" aria-label="go to Offers"
+                  >Offers
+                </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Contact </a>
+                <a class="header__nav-link" href="./contact.html" aria-label="go to Contact"
+                  >Contact
+                </a>
               </li>
             </ul>
           </nav>
@@ -49,22 +57,12 @@
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="#">
-              <img
-                class="header__icon"
-                src="./assets/images/profile.svg"
-                loading="lazy"
-                alt="profile icon"
-              />
+              <img class="header__icon" src="./assets/images/profile.svg" alt="profile icon" />
             </a>
           </li>
           <li class="header__item">
             <a class="header__link" href="#">
-              <img
-                class="header__icon"
-                src="./assets/images/search.svg"
-                loading="lazy"
-                alt="search icon"
-              />
+              <img class="header__icon" src="./assets/images/search.svg" alt="search icon" />
             </a>
           </li>
         </ul>
@@ -82,12 +80,94 @@
           </div>
         </div>
       </section>
-      <section class="wrapper2">
-        <button class="toogleRoom">CHANGE</button>
+      <section class="rooms wrapper2">
+        <div class="rooms__actions">
+          <button class="rooms__action rooms__action--active toogle-list">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="rooms__action-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+          <button class="rooms__action toogle-grid">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="rooms__action-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"
+              />
+            </svg>
+          </button>
+        </div>
 
         <section class="rooms-grid">
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            </a>
+            <div class="room__content">
+              <ul class="room__list">
+                <li class="room__li">
+                  <img class="room__icon" src="./assets/images/rooms/bed.svg" alt="room bed icon" />
+                </li>
+                <li class="room__li">
+                  <img
+                    class="room__icon"
+                    src="./assets/images/rooms/wifi.svg"
+                    alt="room wifi icon"
+                  />
+                </li>
+                <li class="room__li">
+                  <img class="room__icon" src="./assets/images/rooms/car.svg" alt="room car icon" />
+                </li>
+                <li class="room__li">
+                  <img
+                    class="room__icon"
+                    src="./assets/images/rooms/snow.svg"
+                    alt="room snow icon"
+                  />
+                </li>
+                <li class="room__li">
+                  <img
+                    class="room__icon"
+                    src="./assets/images/rooms/dumbbells.svg"
+                    alt="room dumbbells icon"
+                  />
+                </li>
+                <li class="room__li">
+                  <img
+                    class="room__icon"
+                    src="./assets/images/rooms/cigar.svg"
+                    alt="room no-smoking icon"
+                  />
+                </li>
+                <li class="room__li">
+                  <img class="room__icon" src="./assets/images/rooms/cup.svg" alt="room cup icon" />
+                </li>
+              </ul>
+              <h3 class="room__title old">Minimal Duplex Room</h3>
+              <p class="room__description roboto">
+                Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+              </p>
+              <div>
+                <span class="room__price">$345/Night</span>
+                <button class="room__booking">Booking Now</button>
+              </div>
+            </div>
+          </article>
+          <article class="room">
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room2.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -140,7 +220,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room3.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -193,7 +275,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room4.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -246,7 +330,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room5.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -299,7 +385,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room6.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -352,7 +440,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room7.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -405,7 +495,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room8.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -458,7 +550,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room9.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -511,7 +605,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room10.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -564,7 +660,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room1.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -617,60 +715,9 @@
             </div>
           </article>
           <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
-
-            <div class="room__content">
-              <ul class="room__list">
-                <li class="room__li">
-                  <img class="room__icon" src="./assets/images/rooms/bed.svg" alt="room bed icon" />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/wifi.svg"
-                    alt="room wifi icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img class="room__icon" src="./assets/images/rooms/car.svg" alt="room car icon" />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/snow.svg"
-                    alt="room snow icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/dumbbells.svg"
-                    alt="room dumbbells icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/cigar.svg"
-                    alt="room no-smoking icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img class="room__icon" src="./assets/images/rooms/cup.svg" alt="room cup icon" />
-                </li>
-              </ul>
-              <h3 class="room__title old">Minimal Duplex Room</h3>
-              <p class="room__description roboto">
-                Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
-              </p>
-              <div>
-                <span class="room__price">$345/Night</span>
-                <button class="room__booking">Booking Now</button>
-              </div>
-            </div>
-          </article>
-          <article class="room">
-            <img class="room__img" src="./assets/images/room/room.webp" alt="room" />
+            <a href="./room_details.html">
+              <img class="room__img" src="./assets/images/room/room4.webp" alt="room" />
+            </a>
 
             <div class="room__content">
               <ul class="room__list">
@@ -723,64 +770,6 @@
             </div>
           </article>
         </section>
-      </section>
-
-      <section class="rooms-grid--list wrapper2">
-        <article class="room room--list">
-          <img class="room__img room__img--list" src="./assets/images/room/room.webp" alt="room" />
-
-          <div class="room__content room__content--list">
-            <div class="room__info">
-              <ul class="room__list room__list--list">
-                <li class="room__li">
-                  <img class="room__icon" src="./assets/images/rooms/bed.svg" alt="room bed icon" />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/wifi.svg"
-                    alt="room wifi icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img class="room__icon" src="./assets/images/rooms/car.svg" alt="room car icon" />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/snow.svg"
-                    alt="room snow icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/dumbbells.svg"
-                    alt="room dumbbells icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img
-                    class="room__icon"
-                    src="./assets/images/rooms/cigar.svg"
-                    alt="room no-smoking icon"
-                  />
-                </li>
-                <li class="room__li">
-                  <img class="room__icon" src="./assets/images/rooms/cup.svg" alt="room cup icon" />
-                </li>
-              </ul>
-              <h3 class="room__title old">Minimal Duplex Room</h3>
-              <p class="room__description roboto">
-                Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
-              </p>
-            </div>
-            <div class="room__prices room__prices--list">
-              <span class="room__price room__price--list">$345/Night</span>
-              <button class="room__booking">Booking Now</button>
-            </div>
-          </div>
-        </article>
       </section>
     </main>
     <footer class="footer">
