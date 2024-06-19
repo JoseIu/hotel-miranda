@@ -15,7 +15,7 @@
     margin-bottom: 2.5rem;
   }
   &__list {
-    max-width: 73.75rem;
+    width: 100%;
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
