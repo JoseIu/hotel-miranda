@@ -1393,7 +1393,7 @@ body {
 }
 @media screen and (min-width: 900px) {
   .room-details {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
