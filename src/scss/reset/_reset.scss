@@ -139,6 +139,9 @@ label {
   /* (Opcional) */
   appearance: none;
 }
+textarea {
+  resize: vertical;
+}
 
 table,
 tr,

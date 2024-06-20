@@ -138,6 +138,10 @@ label {
   appearance: none;
 }
 
+textarea {
+  resize: vertical;
+}
+
 table,
 tr,
 td {
